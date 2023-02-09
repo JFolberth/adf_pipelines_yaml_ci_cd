@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "*.json",
+				"fileName": "*",
 				"folderPath": "files",
 				"container": "source"
 			}
