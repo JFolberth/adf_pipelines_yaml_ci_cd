@@ -1,0 +1,11 @@
+{
+	"name": "ls_storageAccount",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"serviceEndpoint": "https://saadfdemodeveus.blob.core.windows.net/",
+			"accountKind": "StorageV2"
+		}
+	}
+}
