@@ -1,0 +1,19 @@
+{
+	"name": "destination_json",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sa_destination",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "files",
+				"fileSystem": "destination"
+			}
+		},
+		"schema": {}
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"name": "sa_destination",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://saadfdemodeveus.dfs.core.windows.net/"
+		}
+	}
+}
