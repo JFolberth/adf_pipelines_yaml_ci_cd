@@ -1,0 +1,16 @@
+parameters:
+- name: environmentObjects
+  type: object
+  default:
+    - environmentName: 'dev'
+      regionAbrvs: ['eus']
+      subscriptionId: 'b7d58423-b5cf-4fc4-98bb-446c92dc6ec5'
+- name: serviceName
+  type: string
+  default: 'adfdemo'
+
+  stages:
+- template: stages/adf_build_stage.yml@templates
+  parameters:
+    environmentObjects: ${{ parameters.environmentObjects }}
+    serviceName: ${{ parameters.serviceName }}
