@@ -22,5 +22,5 @@ stages:
   - template: stages/adf_deploy_stage.yml@templates
     parameters:
       environmentObjects: ${{ parameters.environmentObjects }}
-      templateFile: ${{ parameters.templateDirectory }}
+      templateFile: ${{ parameters.templateFile }}
       serviceName: ${{ parameters.serviceName }}
