@@ -11,7 +11,7 @@ parameters:
   default: 'adfdemo'
 - name: templateFile
   type: string 
-  default: 'df_adfdemo_dev_eus/Infrastructure/ARMTemplateForFactory.json'
+  default: '/home/vsts/work/1/df_adfdemo_dev_eus/InfrastructureARMTemplateForFactory.json'
 
 stages:
 - template: stages/adf_build_stage.yml@templates
