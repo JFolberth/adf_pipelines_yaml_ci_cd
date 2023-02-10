@@ -9,7 +9,7 @@ parameters:
   type: string
   default: 'adfdemo'
 
-  stages:
+stages:
 - template: stages/adf_build_stage.yml@templates
   parameters:
     environmentObjects: ${{ parameters.environmentObjects }}
