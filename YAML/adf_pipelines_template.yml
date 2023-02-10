@@ -4,13 +4,23 @@ parameters:
   default:
     - environmentName: 'dev'
       regionAbrvs: ['eus']
+      locations: ['eastus']
       subscriptionId: 'b7d58423-b5cf-4fc4-98bb-446c92dc6ec5'
 - name: serviceName
   type: string
   default: 'adfdemo'
+- name: templateFile
+  type: string 
+  default: 'Infrastructure\ARMTemplateForFactory.json'
 
 stages:
 - template: stages/adf_build_stage.yml@templates
   parameters:
     environmentObjects: ${{ parameters.environmentObjects }}
     serviceName: ${{ parameters.serviceName }}
+- ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/main')}}:
+  - template: stages/adf_deploy_stage.yml@templates
+    parameters:
+      environmentObjects: ${{ parameters.environmentObjects }}
+      templateFile: ${{ parameters.templateDirectory }}
+      serviceName: ${{ parameters.serviceName }}
