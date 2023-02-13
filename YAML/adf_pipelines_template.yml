@@ -12,25 +12,15 @@ parameters:
 - name: templateFile
   type: string 
   default: 'ARMTemplateForFactory.json'
-- name: adfTemplateFileName
-  type: string
-  default: 'main'
-- name: adftemplateDirectory
-  type: string 
-  default: 'Infrastructure'
-
-
+  
 stages:
-- template: stages/adf_and_pipelines_build_stage.yml@templates
+- template: stages/adf_build_stage.yml@templates
   parameters:
     environmentObjects: ${{ parameters.environmentObjects }}
     serviceName: ${{ parameters.serviceName }}
-    adfTemplateName: ${{ parameters.adfTeamplateFileName }}
-    adfTemplateDirectory: ${{ parameters.adftemplateDirectory }}
 - ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/main')}}:
-  - template: stages/adf_and_pipeline_deploy_stage.yml@templates
+  - template: stages/adf_deploy_stage.yml@templates
     parameters:
       environmentObjects: ${{ parameters.environmentObjects }}
       templateFile: ${{ parameters.templateFile }}
       serviceName: ${{ parameters.serviceName }}
-      adfTemplateName: ${{ parameters.adfTeamplateFileName }}
