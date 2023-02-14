@@ -4,7 +4,12 @@ resources:
     type: github
     name: JFolberth/TheYAMLPipelineOne
     endpoint: JFolberth
-    ref: refs/heads/feature/adf_yaml_templates
+    ref: refs/heads/feature/adf_and_pipelines
+  - repository: adf
+    type: github
+    name: JFolberth/adf_yaml_ci_cd
+    endpoint: JFolberth
+    ref: refs/heads/main
 trigger:
 - main
 
