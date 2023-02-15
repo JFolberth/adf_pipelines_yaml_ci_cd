@@ -17,5 +17,4 @@ pool:
   vmImage: 'ubuntu-latest'
 
 stages:
-    - checkout: adf
     - template: adf_pipelines_template.yml
