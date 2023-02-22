@@ -16,7 +16,6 @@ parameters:
 stages:
 - template: stages/adf_build_stage.yml@templates
   parameters:
-    environmentObjects: ${{ parameters.environmentObjects }}
     serviceName: ${{ parameters.serviceName }}
 - ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/main')}}:
   - template: stages/adf_deploy_stage.yml@templates
