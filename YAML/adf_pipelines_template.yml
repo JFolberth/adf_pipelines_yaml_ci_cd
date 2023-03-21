@@ -13,7 +13,7 @@ parameters:
   default: 'adfdemo'
 - name: templateFile
   type: string 
-  default: 'ARMTemplateForFactory.json'
+  default: 'linkedTemplates/ARMTemplate_master.json'
   
 stages:
 - template: stages/adf_build_stage.yml@templates
