@@ -11,6 +11,9 @@ parameters:
 - name: serviceName
   type: string
   default: 'adfdemo'
+- name: linkedTemplates
+  type: boolean
+  default: true
 
   
 stages:
@@ -22,3 +25,4 @@ stages:
     parameters:
       environmentObjects: ${{ parameters.environmentObjects }}
       serviceName: ${{ parameters.serviceName }}
+      linkedTemplates: ${{ parameters.linkedTemplates }}
