@@ -11,9 +11,7 @@ parameters:
 - name: serviceName
   type: string
   default: 'adfdemo'
-- name: templateFile
-  type: string 
-  default: 'ARMTemplateForFactory.json'
+
   
 stages:
 - template: stages/adf_build_stage.yml@templates
@@ -23,5 +21,4 @@ stages:
   - template: stages/adf_deploy_stage.yml@templates
     parameters:
       environmentObjects: ${{ parameters.environmentObjects }}
-      templateFile: ${{ parameters.templateFile }}
       serviceName: ${{ parameters.serviceName }}
