@@ -4,7 +4,7 @@
 		"activities": [
 			{
 				"name": "copy_data",
-				"description": "added description for test fix",
+				"description": "added description for test fix for Darwin",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
