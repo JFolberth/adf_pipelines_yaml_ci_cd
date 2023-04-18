@@ -27,3 +27,4 @@ stages:
     parameters:
       environmentObjects: ${{ parameters.environmentObjects }}
       serviceName: ${{ parameters.serviceName }}
+      templateFile: ${{ parameters.templateFile }}
