@@ -11,9 +11,6 @@ parameters:
 - name: serviceName
   type: string
   default: 'adfdemo'
-- name: templateFile
-  type: string
-  default: 'ARMTemplateForFactory.json'
 - name: linkedTemplates
   type: boolean
   default: true
@@ -29,5 +26,4 @@ stages:
   parameters:
     environmentObjects: ${{ parameters.environmentObjects }}
     serviceName: ${{ parameters.serviceName }}
-    templateFile: ${{ parameters.templateFile }}
     linkedTemplates: ${{ parameters.linkedTemplates }}
