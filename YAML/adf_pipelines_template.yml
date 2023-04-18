@@ -11,6 +11,10 @@ parameters:
 - name: serviceName
   type: string
   default: 'adfdemo'
+- name: templateFile
+  type: string
+  default: 'ARMTemplateForFactory.json'
+  
 
 
   
