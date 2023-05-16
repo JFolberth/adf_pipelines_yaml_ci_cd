@@ -4,7 +4,7 @@ resources:
     type: github
     name: JFolberth/TheYAMLPipelineOne
     endpoint: JFolberth
-    ref: refs/heads/feature/adf_linked_templates
+    ref: refs/main
   - repository: adf
     type: github
     name: JFolberth/adf_yaml_ci_cd
