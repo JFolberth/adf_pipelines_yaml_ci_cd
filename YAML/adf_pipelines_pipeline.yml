@@ -4,7 +4,7 @@ resources:
     type: github
     name: JFolberth/TheYAMLPipelineOne
     endpoint: JFolberth
-    ref: refs/main
+    ref: refs/heads/main
   - repository: adf
     type: github
     name: JFolberth/adf_yaml_ci_cd
