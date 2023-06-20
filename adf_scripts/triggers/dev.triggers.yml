@@ -1,1 +1,3 @@
-dafd
+variables:
+  - name: explicitStopTriggerList 
+    value: trigger1, trigger2
