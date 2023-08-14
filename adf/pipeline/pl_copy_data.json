@@ -50,6 +50,34 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "Web1",
+				"type": "WebActivity",
+				"dependsOn": [
+					{
+						"activity": "copy_data",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://management.azure.com/subscriptions/b7d58423-b5cf-4fc4-98bb-446c92dc6ec5/resourceGroups/rg-adfdemo-tst-eus/providers/Microsoft.DataFactory/factories/adf-adfdemo-tst-eus/pipelines/pl_copy_data/createRun?api-version=2018-06-01",
+					"method": "POST",
+					"authentication": {
+						"type": "MSI",
+						"resource": "https://management.azure.com/"
+					}
+				}
 			}
 		],
 		"annotations": []
