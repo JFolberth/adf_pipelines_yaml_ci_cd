@@ -18,8 +18,7 @@
         },
         "location": "=",
         "identity": {
-            "type": "=",
-            "userAssignedIdentities": "="
+            "identity": "=-identity"
         }
     },
     "Microsoft.DataFactory/factories/pipelines": {},
@@ -146,7 +145,7 @@
         "*": {
             "properties": {
                 "typeProperties": {
-                    "resourceId": "="
+                    "token": "="
                 }
             }
         }
