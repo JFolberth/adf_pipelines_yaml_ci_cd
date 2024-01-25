@@ -15,11 +15,12 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://management.azure.com/subscriptions/b7d58423-b5cf-4fc4-98bb-446c92dc6ec5/resourceGroups/rg-adfdemo-tst-eus/providers/Microsoft.DataFactory/factories/adf-adfdemo-tst-eus/pipelines/pl_copy_data/createRun?api-version=2018-06-01",
 					"method": "POST",
 					"headers": {
 						"Content-Type": "application/json"
 					},
+					"url": "https://management.azure.com/subscriptions/b7d58423-b5cf-4fc4-98bb-446c92dc6ec5/resourceGroups/rg-adfdemo-tst-eus/providers/Microsoft.DataFactory/factories/adf-adfdemo-tst-eus/pipelines/pl_copy_data/createRun?api-version=2018-06-01",
+					"body": "\" \"",
 					"authentication": {
 						"type": "MSI",
 						"resource": "https://management.core.windows.net/"
