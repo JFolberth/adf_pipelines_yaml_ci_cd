@@ -143,10 +143,10 @@
         }
     },
     "Microsoft.DataFactory/factories/credentials": {
-        "*": {
+        "credential1": {
             "properties": {
                 "typeProperties": {
-                    "reseourceId": "|:-uidResourceID:String"
+                    "resourceId": "|:-uidResourceID:String"
                 }
             }
         }
