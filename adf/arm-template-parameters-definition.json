@@ -143,11 +143,12 @@
         }
     },
     "Microsoft.DataFactory/factories/credentials": {
-            "properties": {
-                "typeProperties":{
-                    "resourceId": "-"
-                }
+        "properties": {
+            "type": "ManagedIdentity",
+            "typeProperties": {
+                "resourceId": "-"
             }
+        }
     },
     "Microsoft.DataFactory/factories/managedVirtualNetworks/managedPrivateEndpoints": {
         "properties": {
