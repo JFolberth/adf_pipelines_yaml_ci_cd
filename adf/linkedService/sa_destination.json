@@ -4,7 +4,11 @@
 		"annotations": [],
 		"type": "AzureBlobFS",
 		"typeProperties": {
-			"url": "https://saadfdemodeveus.dfs.core.windows.net/"
+			"url": "https://saadfdemodeveus.dfs.core.windows.net/",
+			"credential": {
+				"referenceName": "credential1",
+				"type": "CredentialReference"
+			}
 		}
 	}
 }
