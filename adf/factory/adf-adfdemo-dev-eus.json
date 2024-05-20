@@ -2,9 +2,9 @@
 	"name": "adf-adfdemo-dev-eus",
 	"properties": {
 		"globalParameters": {
-			"test": {
+			"testName": {
 				"type": "string",
-				"value": "test"
+				"value": "testValue"
 			}
 		}
 	},
