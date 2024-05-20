@@ -1,0 +1,12 @@
+{
+	"name": "adf-adfdemo-dev-eus",
+	"properties": {
+		"globalParameters": {
+			"test": {
+				"type": "string",
+				"value": "test"
+			}
+		}
+	},
+	"location": "eastus"
+}
