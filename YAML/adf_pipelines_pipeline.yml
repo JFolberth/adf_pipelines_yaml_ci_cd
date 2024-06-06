@@ -13,7 +13,7 @@ trigger:
 - main
 
 pool:
-  name: 'ubuntu-latest'
+   vmImage: 'ubuntu-latest'
 
 stages:
     - template: adf_pipelines_template.yml
