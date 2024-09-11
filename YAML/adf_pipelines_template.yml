@@ -10,7 +10,7 @@ parameters:
       locations: ['eastus']
 - name: serviceName
   type: string
-  default: 'adfdemo'
+  default: 'adfdemo2'
 
 stages:
 - template: stages/adf_build_stage.yml@templates
