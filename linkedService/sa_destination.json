@@ -1,0 +1,11 @@
+{
+	"name": "sa_destination",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://saadfdemo2deveus.dfs.core.windows.net/"
+		}
+	}
+}
