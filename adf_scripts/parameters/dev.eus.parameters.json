@@ -3,13 +3,13 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
       "factoryName": {
-          "value": "adf-adfdemo-dev-eus"
+          "value": "adf-adfdemo2-dev-eus"
       },
       "ls_storageAccount_properties_typeProperties_serviceEndpoint": {
-          "value": "https://saadfdemodeveus.blob.core.windows.net/"
+          "value": "https://saadfdemo2deveus.blob.core.windows.net/"
       },
       "sa_destination_properties_typeProperties_url": {
-          "value": "https://saadfdemodeveus.dfs.core.windows.net/"
+          "value": "https://saadfdemo2deveus.dfs.core.windows.net/"
       }
   }
 }
