@@ -4,7 +4,7 @@
 		"activities": [
 			{
 				"name": "copy_data",
-				"description": "added description for test fix for test\n",
+				"description": "paraxel",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
