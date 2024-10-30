@@ -21,4 +21,5 @@ stages:
     parameters:
       environmentObjects: ${{ parameters.environmentObjects }}
       serviceName: ${{ parameters.serviceName }}
+      linkedTemplates: true
 
